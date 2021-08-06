@@ -1,0 +1,5 @@
+<h2>Gardens</h2>
+
+<% @gardens.each do |garden| %>
+  <p><%= link_to "#{garden.name}", garden_path(garden.id) %></p>
+<% end %>
