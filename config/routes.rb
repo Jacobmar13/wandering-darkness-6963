@@ -4,4 +4,6 @@ Rails.application.routes.draw do
     get 'remove_plant', on: :member
   end
 
+  resources :gardens
+
 end
