@@ -68,9 +68,22 @@ RSpec.configure do |config|
       @plot_plant3 = PlotPlant.create!(plot_id: @plot1.id , plant_id: @plant6.id)
 
       #Plot2
-      @plot_plant4 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant4.id)
-      @plot_plant5 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant5.id)
-      @plot_plant6 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant6.id)
+      @plot_plant4 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant1.id)
+      @plot_plant5 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant2.id)
+      @plot_plant6 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant3.id)
+      @plot_plant7 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant4.id)
+      @plot_plant8 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant5.id)
+      @plot_plant9 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant6.id)
+
+      #Plot3
+      @plot_plant10 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant1.id)
+      @plot_plant11 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant2.id)
+      @plot_plant12 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant3.id)
+
+      #Plot4
+      @plot_plant13 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant1.id)
+      @plot_plant14 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant2.id)
+      @plot_plant15 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant3.id)
 
   end
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
