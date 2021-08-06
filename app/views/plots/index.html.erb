@@ -1,10 +1,12 @@
 <h2>Plots</h2>
 
 <% Plot.all.each do |plot| %>
-  <p><b>Plot Number: <%= plot.number %></b></p>
-  <ul>
-    <% plot.plants.each do |plant| %>
-      <li><%= plant.name %></li>
-    <% end %>
-  </ul>
+  <div id="plot<%= plot.id %>">
+    <p><b>Plot Number: <%= plot.number %></b></p>
+    <ul>
+      <% plot.plants.each do |plant| %>
+        <li><%= plant.name %> <%= button_to "Remove #{plant.name}", remove_plant_plot_path(plot.id), method: :get, params: { plant_id: plant.id } %></li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
