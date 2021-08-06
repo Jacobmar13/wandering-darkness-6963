@@ -1,5 +1,6 @@
 class PlotsController < ApplicationController
   def index
+    @plots = Plot.all
   end
 
   def remove_plant
