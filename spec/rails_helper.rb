@@ -60,30 +60,36 @@ RSpec.configure do |config|
     @plant4 = Plant.create!(name: 'Pineapple', description: 'Sour fruit with hard skin', days_to_harvest: 30)
     @plant5 = Plant.create!(name: 'Strawberry', description: 'Red small berries', days_to_harvest: 15)
     @plant6 = Plant.create!(name: 'Raspberry', description: 'Dark red small sour berries', days_to_harvest: 10)
+    @plant7 = Plant.create!(name: 'Coconut', description: 'Hard fruit with milk inside', days_to_harvest: 50)
+    @plant8 = Plant.create!(name: 'Apple', description: 'Small red fruit, can be sweet or sour', days_to_harvest: 100)
+    @plant9 = Plant.create!(name: 'Blueberry', description: 'Small blue sour berry', days_to_harvest: 20)
 
     #PlotPlants
       # Plot1
       @plot_plant1 = PlotPlant.create!(plot_id: @plot1.id , plant_id: @plant4.id)
       @plot_plant2 = PlotPlant.create!(plot_id: @plot1.id , plant_id: @plant5.id)
       @plot_plant3 = PlotPlant.create!(plot_id: @plot1.id , plant_id: @plant6.id)
+      @plot_plant4 = PlotPlant.create!(plot_id: @plot1.id , plant_id: @plant7.id)
 
       #Plot2
-      @plot_plant4 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant1.id)
-      @plot_plant5 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant2.id)
-      @plot_plant6 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant3.id)
-      @plot_plant7 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant4.id)
-      @plot_plant8 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant5.id)
-      @plot_plant9 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant6.id)
+      @plot_plant5 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant1.id)
+      @plot_plant6 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant2.id)
+      @plot_plant7 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant3.id)
+      @plot_plant8 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant4.id)
+      @plot_plant9 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant5.id)
+      @plot_plant10 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant6.id)
+      @plot_plant11 = PlotPlant.create!(plot_id: @plot2.id , plant_id: @plant8.id)
 
       #Plot3
-      @plot_plant10 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant1.id)
-      @plot_plant11 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant2.id)
-      @plot_plant12 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant3.id)
+      @plot_plant12 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant1.id)
+      @plot_plant13 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant2.id)
+      @plot_plant14 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant3.id)
+      @plot_plant15 = PlotPlant.create!(plot_id: @plot3.id , plant_id: @plant9.id)
 
       #Plot4
-      @plot_plant13 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant1.id)
-      @plot_plant14 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant2.id)
-      @plot_plant15 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant3.id)
+      @plot_plant16 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant1.id)
+      @plot_plant17 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant2.id)
+      @plot_plant18 = PlotPlant.create!(plot_id: @plot4.id , plant_id: @plant3.id)
 
   end
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
