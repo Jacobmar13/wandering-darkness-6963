@@ -6,7 +6,7 @@ class PlotsController < ApplicationController
   def remove_plant
     @plot = Plot.find(params[:id])
     @plant = Plant.find(params[:plant_id])
-    PlotPlant.locate(@plot.id, @plant.id).delete
+    PlotPlant.find_by(plot_id: @plot.id, plant_id: @plant.id).delete
     redirect_to plots_path
   end
 end
