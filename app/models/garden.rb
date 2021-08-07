@@ -4,7 +4,8 @@ class Garden < ApplicationRecord
 
   def plot_plants
     plots.joins(:plants)
-    .select('plots.*, plants.*')
-    .group('plots.id, plants.id')
+    .where('plants.days_to_harvest < ?', 100)
+    .select('plants.*')
+    .group('plants.id')
   end
 end
