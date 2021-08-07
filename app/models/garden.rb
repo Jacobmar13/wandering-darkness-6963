@@ -1,5 +1,6 @@
 class Garden < ApplicationRecord
   has_many :plots
+  has_many :plants, through: :plots
 
   def plot_plants
     plots.joins(:plants)
