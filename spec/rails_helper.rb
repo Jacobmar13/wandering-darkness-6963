@@ -35,8 +35,8 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
   config.before(:each) do
-    Plant.destroy_all
     PlotPlant.destroy_all
+    Plant.destroy_all
     Plot.destroy_all
     Garden.destroy_all
 
